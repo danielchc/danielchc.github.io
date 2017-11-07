@@ -1,0 +1,111 @@
+body{
+	color:white;
+	font-family:arial, verdana, sans-serif;
+	margin:0px;
+	background-color:#ddd;
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index: 9999;
+}
+header h1{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:12px;
+	color:white;
+	margin-left:.5em;
+}
+#img{
+	background-color:#34233e;
+	width:100%;
+	height:30em;
+	margin:0;
+	background-position: center;
+	background-size: cover;
+	display:table;
+	position:relative;
+	z-index:-2;
+}
+#img .message{
+	display:table-cell;
+	font-size:90px;
+	vertical-align:middle;
+	text-align:center;
+	z-index:99;
+}
+nav{
+	margin-right:.5em;
+	float:right;
+}
+nav ul{
+	list-style:none;
+	margin: .5em;
+}
+nav ul li{
+	padding:.5em;
+	display:inline-block;
+	color:white;
+}
+nav ul a li:hover{
+	/*color:#04A7E1;*/
+	color:#34233e;
+	background-color:white;
+}
+div#description{
+	margin:auto;
+	margin-top: 3em;
+	width:70%;
+	color:black;
+}
+footer{
+	background-color:#222;
+	padding:1em;
+	display: flex;
+	position:relative;
+}
+footer img#logo{
+	display:inline-flex;
+	vertical-align:middle;
+}
+.social{
+	position: absolute;
+	right: 1em;
+}
+.social img{
+	display:inline-block;
+}
+main h2{
+	text-align: center;
+	color: black;
+}
+#shownav{
+	display:none;
+}
+@media screen and (max-width: 1080px) {
+	body{
+		zoom:2;
+	}
+	nav{
+		display:none;
+		width:100%;
+		margin:0;
+		background-color:#04A7E1;
+	}
+	nav ul li{
+		display:block;
+		color:white;
+	}
+	nav ul a{
+		text-decoration:none;
+	}
+	header{
+		background-color:#04A7E1;
+	}
+	#shownav{
+		display:inline;
+		float:right;
+	}
+}
