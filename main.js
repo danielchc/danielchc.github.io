@@ -70,7 +70,8 @@ $(document).ready(function(){
 	}, 200); //Establece que se cambie unha letra cada 200ms
 	
 	
-	$("#shownav").on("click",function(){
+	$("#shownav").on("click",function(e){
+		event.stopPropagation();
 		if($("nav").css("display")=="block"){
 			$("nav").css("display","none");
 		}else{

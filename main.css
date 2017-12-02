@@ -56,7 +56,7 @@ nav ul a li:hover{
 }
 div#description{
 	margin:auto;
-	margin-top: 3em;
+	margin-top: 0em;
 	width:70%;
 	color:black;
 }
@@ -64,7 +64,11 @@ footer{
 	background-color:#222;
 	padding:1em;
 	display: flex;
-	position:relative;
+	position:absolute;
+	left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
 }
 footer img#logo{
 	display:inline-flex;
@@ -92,7 +96,8 @@ main h2{
 		display:none;
 		width:100%;
 		margin:0;
-		background-color:#04A7E1;
+		background-color:#34243e;
+		border-bottom: 1px solid white;
 	}
 	nav ul li{
 		display:block;
@@ -102,10 +107,25 @@ main h2{
 		text-decoration:none;
 	}
 	header{
-		background-color:#04A7E1;
+		background-color:#34243e;
 	}
 	#shownav{
 		display:inline;
 		float:right;
+		border:none;
+		color:white;
+		background-color:#34243e;
+		transform: rotate(-90deg);
+		padding:0.25em 0.5em 0.5em  0.5em;
+		margin-right:1em;
+		margin-top:1em;
+		border:white solid 1px;
+	}
+	#shownav:hover{
+		background-color:white;
+		color:#34243e;
+	}
+	#shownav:focus{
+		outline:0;
 	}
 }
