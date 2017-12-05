@@ -1,8 +1,14 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
 body{
 	color:white;
 	font-family:arial, verdana, sans-serif;
 	margin:0px;
-	background-color:#ddd;
+	background-color:#eee;
 }
 header{
 	position:fixed;
@@ -69,6 +75,7 @@ footer{
     right: 0;
     bottom: 0;
     margin: 0;
+	height:20px;
 }
 footer img#logo{
 	display:inline-flex;
@@ -91,6 +98,12 @@ main h2{
 @media screen and (max-width: 1080px) {
 	body{
 		zoom:2;
+	}
+	footer{
+		position:fixed;
+	}
+	main{
+		margin-bottom:65px;
 	}
 	nav{
 		display:none;
@@ -119,11 +132,6 @@ main h2{
 		padding:0.25em 0.5em 0.5em  0.5em;
 		margin-right:1em;
 		margin-top:1em;
-		border:white solid 1px;
-	}
-	#shownav:hover{
-		background-color:white;
-		color:#34243e;
 	}
 	#shownav:focus{
 		outline:0;

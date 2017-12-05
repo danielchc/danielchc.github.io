@@ -40,7 +40,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		paused=false; //Establece unha pausa antes de empezar de 2 segundos,para poder leer o texto
 	},2000);
-	usitios=["SysAdmin","Python","Java","PHP","VB.Net","SQL","JQuery","Javascript","AJAX","HTML5","CSS3","Libgdx2d"];
+	usitios=["SysAdmin","Python","DNS","DHCP","PHP","VB.Net","SQL","JQuery","Javascript","HTML5","CSS3","Libgdx2d","Linux","Windows"];
 	sitios=shuffle(usitios); //Mezcla os datos
 	setInterval(function(){
 		if (paused) return; //Se está pausado non segue
