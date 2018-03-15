@@ -1,139 +1,48 @@
-html,
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-}
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 body{
-	color:white;
-	font-family:arial, verdana, sans-serif;
-	margin:0px;
-	background-color:#eee;
-}
-header{
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	z-index: 9999;
-}
-header h1{
-	display:inline-block;
-	vertical-align:middle;
-	line-height:12px;
-	color:white;
-	margin-left:.5em;
-}
-#img{
 	background-color:#34233e;
-	width:100%;
-	height:30em;
-	margin:0;
-	background-position: center;
-	background-size: cover;
-	display:table;
-	position:relative;
-	z-index:-2;
-}
-#img .message{
-	display:table-cell;
-	font-size:90px;
-	vertical-align:middle;
-	text-align:center;
-	z-index:99;
-}
-nav{
-	margin-right:.5em;
-	float:right;
-}
-nav ul{
-	list-style:none;
-	margin: .5em;
-}
-nav ul li{
-	padding:.5em;
-	display:inline-block;
 	color:white;
+	font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-nav ul a li:hover{
-	/*color:#04A7E1;*/
-	color:#34233e;
-	background-color:white;
-}
-div#description{
+main{
+	width:45vh;
 	margin:auto;
-	margin-top: 0em;
-	width:70%;
-	color:black;
-}
-footer{
-	background-color:#222;
-	padding:1em;
-	display: flex;
-	position:absolute;
-	left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-	height:20px;
-}
-footer img#logo{
-	display:inline-flex;
-	vertical-align:middle;
-}
-.social{
 	position: absolute;
-	right: 1em;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
-.social img{
+h1{
+	font-size:4em;
+	margin:.4em 0em;
 	display:inline-block;
 }
-main h2{
-	text-align: center;
-	color: black;
+.subtitle{
+	text-align:center;
+	font-size:1.5em;
 }
-#shownav{
+.try{
+	text-decoration:line-through;
+}
+#social{
+	padding:1em;
+	display:flex;
+	justify-content: space-between;
+}
+.arrow{
+	text-align:center;
+}
+ul{
+	margin:0;
+}
+.fliped{
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+#details{
 	display:none;
-}
-@media screen and (max-width: 1080px) {
-	body{
-		zoom:2;
-	}
-	footer{
-		position:fixed;
-	}
-	main{
-		margin-bottom:65px;
-	}
-	nav{
-		display:none;
-		width:100%;
-		margin:0;
-		background-color:#34243e;
-		border-bottom: 1px solid white;
-	}
-	nav ul li{
-		display:block;
-		color:white;
-	}
-	nav ul a{
-		text-decoration:none;
-	}
-	header{
-		background-color:#34243e;
-	}
-	#shownav{
-		display:inline;
-		float:right;
-		border:none;
-		color:white;
-		background-color:#34243e;
-		transform: rotate(-90deg);
-		padding:0.25em 0.5em 0.5em  0.5em;
-		margin-right:1em;
-		margin-top:1em;
-	}
-	#shownav:focus{
-		outline:0;
-	}
 }
