@@ -53,6 +53,7 @@ $(document).ready(function(){
 	}, 200);
 	$("#arrowtoogle").on("click",function(){
 		$("#details").slideToggle();
+		$("#basic").slideToggle();
 		$(this).toggleClass("fliped",400);
 	});
 });
