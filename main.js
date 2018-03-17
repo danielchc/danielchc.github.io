@@ -23,7 +23,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		paused=false;
 	},2000);
-	codes=["Python","PHP","VB.Net","SQL","JQuery","Javascript","HTML5","CSS3"];
+	codes=["Python","PHP","VB.Net","SQL","JQuery","JavaScript","HTML5","CSS3"];
 	codes=shuffle(codes);
 	setInterval(function(){
 		if (paused) return; //Se está pausado non segue
