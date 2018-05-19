@@ -60,6 +60,6 @@ $(document).ready(function(){
 	$("#languageselector").on("change",function(){
 		$(".translatable").addClass("hidden");
 		$("."+$(this).val()).removeClass("hidden");
-		$("span:not(.hidden) .codes").text("");
+		$(".codes").text("");
 	});
 });
