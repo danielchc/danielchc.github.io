@@ -11,16 +11,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
+		<select id="languageselector">
+			<option value="english">EN</option>
+			<option value="galician">GL</option>
+			<option value="spanish">ES</option>
+			<option value="portuguese">PT</option>
+		</select>
 		<main>
 			<div id="basic">
-				<h1>Hello, I'm Daniel</h1>
+				<h1 class="translatable english">Hello, I'm Daniel</h1>
+				<h1 class="translatable spanish hidden">Hola, soy Daniel</h1>
+				<h1 class="translatable galician hidden">Ola, son Daniel</h1>
+				<h1 class="translatable portuguese hidden">Olá, sou o Daniel</h1>
 				<div class="subtitle">
-					<span>I'm SysAdmin and sometimes I <span class="try">try</span> write some <span id="codes">code</span></span>
+					<span class="translatable english" >I'm SysAdmin and sometimes I <span class="try">try</span> write some <span class="codes">code</span></span>
+					<span class="translatable spanish hidden">Soy Administrador de Sistemas y a veces <span class="try">intento</span> escribir algo de <span class="codes">código</span></span>
+					<span class="translatable galician hidden">Son Administrador de Sistemas e a veces <span class="try">intento</span> escribir algo de <span class="codes">código</span></span>
+					<span class="translatable portuguese hidden">Sou Administrador de Sistema <span class="try">tento</span> escrever um pouco de <span class="codes">código</span></span>
 				</div>
 				<div id="social">
-					<a href="https://github.com/danielchc"><img class="socialicon" altsrc="./img/github-colored.png" src="./img/github.png"></a>
-					<a href="https://twitter.com/danielchc_"><img class="socialicon" altsrc="./img/twitter-colored.png" src="./img/twitter.png"></a>
-					<a href="#"><img class="socialicon" altsrc="./img/linkedin-colored.png"src="./img/linkedin.png"></a>
+					<a href="https://github.com/danielchc"><img title="Github" class="socialicon" altsrc="./img/github-colored.png" src="./img/github.png"></a>
+					<a href="https://twitter.com/danielchc_"><img title="Twitter" class="socialicon" altsrc="./img/twitter-colored.png" src="./img/twitter.png"></a>
+					<a href="#"><img title="Linkedin" class="socialicon" altsrc="./img/linkedin-colored.png"src="./img/linkedin.png"></a>
 					<!-- <a href="#"><img class="socialicon" altsrc="./img/mail-colored.png" src="./img/mail.png"></a> -->
 				</div>
 			</div>
@@ -28,14 +40,6 @@
 				<img id="arrowtoogle" src="./img/arrow.png">
 			</div>
 			<div id="details">
-				<!--<li>Languages
-					<ul>
-						<li>Spanish-Native</li>
-						<li>Galician-Native</li>
-						<li>English-Intermediate</li>
-						<li>Portuguese-Intermediate(B1)</li>
-					</ul>
-				</li>-->
 				<li>Systems &amp; Services
 					<ul>
 						<li>Linux</li>
@@ -45,10 +49,11 @@
 						<li>DNS</li>
 						<li>Active Directory</li>
 						<li>FTP</li>
-						<li>Mail</li>
+						<li>Dovecot, Postfix, hMail,Exchange</li>
 						<li>MySQL and Microsoft SQL Server</li>
 						<li>Wordpress</li>
 						<li>Balancers</li>
+						<li>Azure</li>
 					</ul>
 				</li>
 				<li>Code
@@ -61,6 +66,7 @@
 						<li>JavaScript</li>
 						<li>JQuery</li>
 						<li>SQL</li>
+						<li>Powershell</li>
 					</ul>
 				</li>
 			</div>

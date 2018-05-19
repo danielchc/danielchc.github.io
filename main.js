@@ -26,8 +26,9 @@ $(document).ready(function(){
 	codes=["Python","PHP","VB.Net","SQL","JQuery","JavaScript","HTML5","CSS3"];
 	codes=shuffle(codes);
 	setInterval(function(){
+		if ($("span:not(.hidden) .codes").text()==undefined) return;
 		if (paused) return; //Se está pausado non segue
-		str=$("#codes").text() //Obten o texto
+		str=$("span:not(.hidden) .codes").text() //Obten o texto
 		if(!writing){ //Borranse as letras
 			str=str.substring(0,str.length - 1);
 			if(str.length==0){ //Se non hai máis letras pasase a escribir
@@ -49,11 +50,16 @@ $(document).ready(function(){
 				currlett++; //Cambiase de letra
 			}
 		}
-		$("#codes").text(str)
+		$("span:not(.hidden) .codes").text(str)
 	}, 200);
 	$("#arrowtoogle").on("click",function(){
 		$("#details").slideToggle();
 		$("#basic").slideToggle();
 		$(this).toggleClass("fliped",400);
+	});
+	$("#languageselector").on("change",function(){
+		$(".translatable").addClass("hidden");
+		$("."+$(this).val()).removeClass("hidden");
+		$("span:not(.hidden) .codes").text("");
 	});
 });
