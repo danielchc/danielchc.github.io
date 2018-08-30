@@ -19,7 +19,7 @@ app.controller('portfolioController', function($scope) {
 	currlett=0; //Letra actual
 	paused=true;
 	setTimeout(function(){paused=false;},2000);
-	codes=["Python","PHP","VB.Net","SQL","JQuery","JavaScript","HTML5","CSS3","AngularJS","Angular.IO"];
+	codes=["Python","PHP","VB.Net","SQL","JQuery","JavaScript","HTML5","CSS3","AngularJS","Angular2"];
 	codes=shuffle(codes);
 	setInterval(function(){
 		if (paused) return; //Se está pausado non segue
