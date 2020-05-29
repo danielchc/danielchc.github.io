@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+body{
+	background-color:#34233e;
+	color:white;
+	font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main{
+	width:45vh;
+	margin:auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+	font-size:4em;
+	margin:.4em 0em;
+	display:inline-block;
+}
+.subtitle{
+	text-align:center;
+	font-size:1.5em;
+}
+.try{
+	text-decoration:line-through;
+}
+#social{
+	padding:1em;
+	display:flex;
+	justify-content: space-between;
+}
+.arrow{
+	text-align:center;
+}
+ul{
+	margin:0;
+}
+.fliped{
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+#details{
+	display:none;
+}
+.hidden{
+	display:none;
+}
+#languageselector{
+    border: 1px solid transparent;
+    background-color: transparent;
+	color:white;
+	font-size:1.2em;
+	float:right;
+}
+#languageselector:focus{
+	outline:0;
+}
+#languageselector option{
+	color:black;
+}
+body{
+	background-position:center;
+	background-attachment: fixed;
+	margin:0;
+}
+.filtro{
+	z-index:-99;
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity: 0.25;
+	-webkit-animation: backgroundk 60s cubic-bezier(0.22, 0.21, 1, 1) infinite;
+	animation: backgroundk 60s cubic-bezier(0.22, 0.21, 1, 1) infinite;  
+}
+@-webkit-keyframes backgroundk {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }
+  50% { background-color: #99f; } 
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
+
+@keyframes backgroundk {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }  
+  50% { background-color: #99f; } 
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
