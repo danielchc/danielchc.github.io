@@ -24,6 +24,11 @@ h1{
 .try{
 	text-decoration:line-through;
 }
+.apTitle {
+    display: inline;
+    font-size: large;
+    font-weight: bolder;
+}
 #social{
 	padding:1em;
 	display:flex;
@@ -69,7 +74,7 @@ body{
 }
 .filtro{
 	z-index:-99;
-	position:absolute;
+	position:fixed;
 	width:100%;
 	height:100%;
 	opacity: 0.25;
@@ -91,3 +96,4 @@ body{
   67% { background-color: #99f; }
   100% { background-color: #f99; }
 }
+
