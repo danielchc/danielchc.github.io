@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 body{
-	background-color:#34233e;
+	background: linear-gradient(to right, #1e5799 0%, #2ce0bf 100%);
+	background-position:center;
+	background-attachment: fixed;
+	margin:0;
 	color:white;
 	font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -67,33 +70,3 @@ ul{
 #languageselector option{
 	color:black;
 }
-body{
-	background-position:center;
-	background-attachment: fixed;
-	margin:0;
-}
-.filtro{
-	z-index:-99;
-	position:fixed;
-	width:100%;
-	height:100%;
-	opacity: 0.25;
-	-webkit-animation: backgroundk 60s cubic-bezier(0.22, 0.21, 1, 1) infinite;
-	animation: backgroundk 60s cubic-bezier(0.22, 0.21, 1, 1) infinite;  
-}
-@-webkit-keyframes backgroundk {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }
-  50% { background-color: #99f; } 
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
-}
-
-@keyframes backgroundk {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }  
-  50% { background-color: #99f; } 
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
-}
-
